@@ -76,10 +76,7 @@ button,
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-img{
-    max-width: 100%;
-    display: block;
-}
+
 footer {
     background-color: #222;
     color: white;
