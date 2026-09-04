@@ -21,15 +21,40 @@ body {
 /*ele arruma o bloco principal*/
 .container {
     width: 90%;
-    max-width: 500px;
     padding: 50px;
+   box-sizing: border-box;
+    max-width: 500px;
     background-color: rgb(226, 241, 247);
     border-radius: 25px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     text-align: center;
-    
 }
+input, button {
+    width: 100%;
+}
+@media (min-width: 600px){
+    .container {
+        max-width: 480px;
+        margin: 0 auto;
+        padding: 32px;
+    }
+    input{ 
+        width: 70%;
+    }
+    button {
+        width: 28%;
+    }
 
+    input, button {
+        min-height: 44px;
+        font-size: 16px;
+        padding: 10px 14px;
+    }
+
+    button {
+        margin-top: 8px;
+    }
+}
 /*aqui a gente mexe na parte de cima do site*/
 header {
     background-color: ffffff;
