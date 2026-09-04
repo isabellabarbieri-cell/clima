@@ -4,18 +4,6 @@ const botaoBuscar = document.getElementById("buscar");
 const GEO_URL = "https://geocoding-api.open-meteo.com/v1/search";
 const CLIMA_URL = "https://api.open-meteo.com/v1/forecast";
 
-if ("ServiceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-    .register("sw.js")
-    .then(() => {
-      console.log("Service Worker registrado com sucesso.");
-    })
-    .catch((erro) => {
-      console.error("Erro ao registrar o service Worker:", erro);
-    });
-  });
-}
 
 botaoBuscar.addEventListener("click", buscar);
 
@@ -104,4 +92,15 @@ function buscar() {
       `;
     });
 }
-
+if ("ServiceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+    .register("sw.js")
+    .then(() => {
+      console.log("Service Worker registrado com sucesso.");
+    })
+    .catch((erro) => {
+      console.error("Erro ao registrar o service Worker:", erro);
+    });
+  });
+}
