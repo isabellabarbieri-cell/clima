@@ -1,7 +1,7 @@
 {
-    "name": "Consulta do Clima",
+    "name": "Clima",
     "short_name": "Clima",
-    "start_url": "index.html",
+    "start_url": "./",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#1f5c99",
